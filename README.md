@@ -1,7 +1,7 @@
 # CommentMaster
 ![CommentMaster Images](https://github.com/user-attachments/assets/eb333ed7-2276-4eea-8218-08a6fd3daede)
 
-**CommentMaster** is a powerful Python tool designed to automatically comment on all Facebook posts within a specified group. Whether you want to comment with text, images, or both, CommentMaster handles it all effortlessly.
+**CommentMaster** is an advanced Python tool that automates the process of commenting on Facebook posts within a designated group. It allows you to efficiently post comments across multiple posts with ease. You can choose to include text, images, or both in your comments. CommentMaster simplifies the process by handling the details automatically, making it ideal for managing group interactions and boosting engagement.
 
 ## Key Features
 - **Image Support**: Attach images to your comments or opt for text-only comments, giving you flexibility in how you engage.
