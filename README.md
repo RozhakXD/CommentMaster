@@ -4,16 +4,16 @@
 **CommentMaster** is a powerful Python tool designed to automatically comment on all Facebook posts within a specified group. Whether you want to comment with text, images, or both, CommentMaster handles it all effortlessly.
 
 ## Key Features
+- **Image Support**: Attach images to your comments or opt for text-only comments, giving you flexibility in how you engage.
 - **Customizable Delay**: Set a delay between comments to avoid getting flagged by Facebook, with a recommended minimum of 60 seconds.
 - **Automated Comments**: Automatically comment on all posts within a specified Facebook group, saving you time and effort.
-- **Image Support**: Attach images to your comments or opt for text-only comments, giving you flexibility in how you engage.
 - **Random Comments**: Input multiple comment texts, and CommentMaster will randomly select one for each post. Separate comments with commas and use `+` for line breaks within a single comment.
 
 ## How It Works
-- **Group Link**: Provide the Facebook group link, and CommentMaster will target all posts in that group.
 - **Comment Delay**: Set a delay between comments to prevent being blocked. A delay of 60 seconds or more is recommended.
 - **Image Path**: Specify the image file path or leave it blank for text-only comments.
 - **Comment Text**: Enter your comments, separated by commas for randomization. Use `+` for line breaks.
+- **Group Link**: Provide the Facebook group link, and CommentMaster will target all posts in that group.
 
 ## Installation
 ```
@@ -32,8 +32,8 @@ If you find this tool helpful, consider supporting its development:
 - [PayPal](https://paypal.me/rozhak9)
 
 ## Troubleshooting
-- **Image File Path**: Verify that the image file path is correct if you're using an image. An incorrect path will result in failure to attach the image to your comments.
 - **Valid Cookies**: Ensure your cookies are valid and up-to-date to avoid login issues and maintain a stable connection with Facebook.
+- **Image File Path**: Verify that the image file path is correct if you're using an image. An incorrect path will result in failure to attach the image to your comments.
 - **Correct Group Link**: Double-check that the Facebook group link is properly formatted. An incorrect link can prevent CommentMaster from targeting the right group.
 - **Adequate Delay**: Set the comment delay to at least 60 seconds. This helps to minimize the risk of your account being flagged or blocked by Facebook's automated systems.
 
