@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="dicoding:email" content="rozaqsapa@gmail.com">
+        <title>Leastric Energy Intelligence</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="icon" href="https://leastric.com/wp-content/uploads/2020/09/android-chrome-512x512-1.png" type="image/png">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <header class="app-header">
+            <div class="logo-container">
+                <img src="https://leastric.com/wp-content/uploads/2020/09/Logo-Gram-Full-_-Horizontal-_-White.png" alt="Leastric Logo" class="logo">
+                <h1 class="app-title">Energy Intelligence Dashboard</h1>
+            </div>
+            <div class="last-updated" id="last-updated">Loading...</div>
+        </header>
+        <main class="dashboard-container">
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-chart-line card-icon"></i>Energy Consumption & Forecast
+                    </h2>
+                    <div id="chart-date-range" class="card-subtitle">Loading date range...</div>
+                </div>
+                <div class="chart-container">
+                    <div id="loading-chart" class="loading">
+                        <div class="spinner"></div> Loading chart data...
+                    </div>
+                    <canvas id="energyChart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-plug card-icon"></i>Device Status
+                    </h2>
+                </div>
+                <div id="loading-devices" class="loading">
+                    <div class="spinner"></div> Loading device status...
+                </div>
+                <div class="status-grid" id="device-status"></div>
+            </div>
+            <div class="card realtime-card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-bolt card-icon"></i>Current Consumption
+                    </h2>
+                </div>
+                <div id="loading-realtime" class="loading">
+                    <div class="spinner"></div> Loading realtime data...
+                </div>
+                <div id="realtime-status">
+                    <div class="realtime-value">-</div>
+                    <div class="realtime-time">-</div>
+                </div>
+            </div>
+        </main>
+        <footer class="app-footer">
+            <p>© 2025 Leastric Energy Intelligence. All rights reserved.</p>
+        </footer>
+
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
